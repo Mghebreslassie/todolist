@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header" class="header horizontal-card">
+        <h1 id="main-title" class="title">Things to get done...</h1>
+    </header>
+    <section id="task-display-area" class="task-body">
+        <table id="task-table" class="task-table">
+            <tr id="table-headers" class="table-headers">
+                <th>order</th>
+                <th>name</th>
+                <th>description</th>
+                <th>date</th>
+                <th>urgent</th>
+                <th>category</th>
+            </tr>
+        </table>
+    </section>
+    <section id="form-area" class="form-area">
+        <form>
+            <label for="name">Task Name</label>
+            <input id="task-name" type="text" name="name">
+            <br>
+            <label for="description">Task Description</label>
+            <input id="task-describe" type="text" name="description">
+            <br>
+            <label for="date">Task Date</label>
+            <input id="task-date" type="text" name="date">
+            <br>
+            <label for="category">Task Category</label>
+            <input id="task-category" type="text" name="category">
+            <br>
+            <label for="Urgent">Urgent</label>
+            <input id="task-urgency" type="checkbox" name="Urgent" value="Urgent">
+        </form>
+    </section>
+    <section id="button-area" class="button-area">
+        <button class="pill-button" onclick="addTask()">Add Task</button>
+        <button class="pill-button" onclick="showHide()">Show/Hide</button>
+        <button class="pill-button" onclick="deleteAll()">Delete All</button>
+        <button class="pill-button">Edit Task</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

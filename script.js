@@ -47,6 +47,7 @@ function deleteAll() {
     taskRows.forEach((row)=>{
         row.remove();
     })
+    taskCount = 0;
 };
 
 function showHide() {
